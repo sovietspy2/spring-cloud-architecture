@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: git
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sovietspy2/spring-cloud-config-repo-test.git
+          clone-on-start: true
+          default-label: main
+
+server:
+  port: 8888
+
