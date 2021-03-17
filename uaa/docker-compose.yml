@@ -1,0 +1,9 @@
+version: '3'
+services:
+  uaa:
+    image: scg-demo-uaa:latest
+    container_name: uaa
+    expose:
+      - "8090"
+    ports:
+      - "8090:8090"
